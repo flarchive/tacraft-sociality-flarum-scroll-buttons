@@ -1,0 +1,6 @@
+tacraft-sociality-scroll-buttons:
+  admin:
+    scroll_to_top_label: 滚动到顶部
+    scroll_to_top_help: 显示一个按钮，用于滚动到页面顶部
+    scroll_to_bottom_label: 滚动到底部
+    scroll_to_bottom_help: 显示一个按钮，用于滚动到页面底部

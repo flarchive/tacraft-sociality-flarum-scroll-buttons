@@ -1,0 +1,6 @@
+tacraft-sociality-scroll-buttons:
+  admin:
+    scroll_to_top_label: Back to top
+    scroll_to_top_help: Display a floating button that jumps to the top of the page
+    scroll_to_bottom_label: Go to bottom
+    scroll_to_bottom_help: Display a floating button that jumps to the bottom of the page

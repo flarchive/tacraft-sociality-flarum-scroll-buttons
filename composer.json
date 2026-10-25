@@ -1,0 +1,59 @@
+{
+    "name": "tacraft-sociality/flarum-scroll-buttons",
+    "description": "Add scroll up and scroll down buttons.",
+    "keywords": [
+        "flarum",
+        "flarum-extension",
+        "scroll buttons"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^2.0.0-beta"
+    },
+    "authors": [
+        {
+            "name": "TaCraft Sociality",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/TaCraft-Sociality/flarum-scroll-buttons"
+    },
+    "homepage": "https://github.com/TaCraft-Sociality/flarum-scroll-buttons",
+    "autoload": {
+        "psr-4": {
+            "TacraftSociality\\ScrollButtons\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Scroll Buttons",
+            "category": "feature",
+            "icon": {
+                "image": "icon.svg",
+                "color": "#fff",
+                "backgroundColor": "#2B6CB0",
+                "backgroundSize": "cover",
+                "backgroundPosition": "center"
+            }
+        },
+        "flarum-cli": {
+            "modules": {
+                "admin": true,
+                "forum": true,
+                "js": true,
+                "jsCommon": false,
+                "css": true,
+                "gitConf": true,
+                "githubActions": true,
+                "prettier": true,
+                "typescript": false,
+                "bundlewatch": false,
+                "backendTesting": false,
+                "editorConfig": true,
+                "styleci": true
+            }
+        }
+    }
+}

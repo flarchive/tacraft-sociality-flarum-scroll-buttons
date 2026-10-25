@@ -1,0 +1,71 @@
+.ScrollButtons {
+  position: fixed;
+  bottom: 60px;
+  right: 12px;
+  z-index: calc(~"var(--zindex-header) + 5");
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s;
+
+  &.is-visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  @media @phone {
+    bottom: 70px;
+    right: 8px;
+  }
+}
+
+.ScrollButtons-button {
+  display: block;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--border-radius);
+
+  color: #ffffff !important;
+  background: #000000 !important;
+  border: 2px solid #000000 !important;
+
+  .Button-icon,
+  .icon {
+    color: #ffffff !important;
+  }
+
+  &:hover {
+    background: #333333 !important;
+    border-color: #333333 !important;
+
+    .Button-icon,
+    .icon {
+      color: #ffffff !important;
+    }
+  }
+
+  & + & {
+    margin-top: 4px;
+  }
+}
+
+[data-theme^="dark"] .ScrollButtons-button,
+.dark .ScrollButtons-button {
+  color: #000000 !important;
+  background: #ffffff !important;
+  border: 2px solid #ffffff !important;
+
+  .Button-icon,
+  .icon {
+    color: #000000 !important;
+  }
+
+  &:hover {
+    background: #e5e5e5 !important;
+    border-color: #e5e5e5 !important;
+
+    .Button-icon,
+    .icon {
+      color: #000000 !important;
+    }
+  }
+}
